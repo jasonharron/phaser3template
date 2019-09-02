@@ -9,16 +9,17 @@ export default class BootScene extends Phaser.Scene {
   }
 
   preload () {
-    // Preloader code goes here
+    // Preload assets
     this.load.image('logo', './assets/logo.png');
+
+    // Declare variables for center of the scene
     this.centerX = this.cameras.main.width / 2;
     this.centerY = this.cameras.main.height / 2;
   }
 
   create (data) {
     //Create the scene
-      var playerScore = 10;
-      var logo = this.add.image(this.centerX, this.centerY, 'logo');
+    var logo = this.add.image(this.centerX, this.centerY, 'logo');
   }
 
   update (time, delta) {
